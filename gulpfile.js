@@ -8,6 +8,10 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
     sass = require('gulp-ruby-sass');
 
+// fix problems with undefined Promise class
+// http://stackoverflow.com/questions/32490328/gulp-autoprefixer-throwing-referenceerror-promise-is-not-defined
+require('es6-promise').polyfill();
+
 var config = {
      sassPath: 'scss',
      bowerDir: 'bower_components' 
