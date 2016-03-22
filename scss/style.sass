@@ -1,0 +1,238 @@
+//colors
+$main: #3f3b4f
+$highlight: #b7b6ba
+
+
+*
+    box-sizing: border-box
+
+html, body, button
+    font-family: Lato, sans-serif
+
+.clearfix:before, .clearfix:after
+    content: " "
+    display: table
+
+.clearfix:after
+    clear: both
+
+.wrapper
+    width: 1440px
+    max-width: 90%
+    margin: 0 auto
+    text-align: center
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 300
+
+textarea:focus, input:focus
+    outline: none
+
+*:focus
+    outline: none
+
+.primary_btn
+    background: $main
+    border-radius: 35px
+    padding: 0.7em 1.7em 0.9em 1.7em
+    border: 0px
+    color: #fff
+    &:hover
+        background: $highlight
+
+.secondary_btn
+    background: $highlight
+    border-radius: 35px
+    padding: .7em 1.7em !important
+    border: 0px
+    color: #fff
+    &:hover
+        background: $main
+
+.cover
+    background-image: url(../img/cover.png)
+    background-size: cover
+    background-repeat: no-repeat
+    .top_header
+        padding: 1.5em 0
+        h1
+            padding: 0
+            font-size: inherit
+        .logo
+            float: left
+        .main_nav
+            float: right
+            ul
+                li
+                    list-style: none
+                    display: inline-block
+                    a
+                        text-decoration: none
+                        color: #fff
+                        padding: 0 .6em
+                        &:hover
+                            color: #ccc
+    h1
+        font-size: 2.5em
+        color: #fff
+        text-align: center
+        padding: 3em 0 .2em 0
+        font-weight: bold
+        margin: 0
+    h2
+        text-align: center
+        color: #fff
+        padding-bottom: 2em
+        margin: 0
+    button
+        margin: 2em 0 4em 0
+#services
+    background: rgba($main, .25)
+    padding-bottom: 2em
+    .wrapper
+        padding: 4em 0
+    .box
+        width: 32%
+        float: left
+        background: #fff
+        margin-right: 2%
+        padding: 1.5em
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+        &:last-child
+            margin: 0
+    h2
+        margin: 0px
+        font-weight: bold
+        padding-bottom: 1em
+    h3
+        line-height: 1.6em
+        margin-bottom: 2em
+    p
+        color: #6e6a87
+        font-weight: 100
+        line-height: 1.6em
+        padding-bottom: 1.6em
+    button
+        margin-bottom: 1.6em
+.recent_work
+    background: #efefef
+    padding: 4em 0 25rem 0
+    text-align: center
+    position: relative
+    overflow: hidden
+    h2
+        font-weight: bold
+    h3
+        line-height: 1.6em
+    #slider_button
+        list-style: none
+        padding: 0
+        margin: 2em 0
+        a
+            text-decoration: none
+        li
+            width: 12px
+            height: 12px
+            margin: 0 .5em
+            position: relative
+            border-radius: 100%
+            display: inline-block
+            background-color:  #c1c1c1
+            transition: background .4s ease-in-out
+            &:hover
+                background: $main
+        .current
+            background: $main
+    #slider
+        list-style: none
+        li
+            width: 600px
+            height: 375px
+            overflow: hidden
+            background-color: #fff
+            box-shadow: 0px 0px 57px rgba(4, 6, 9, 0.25)
+            position: absolute
+            z-index: 3
+            border-radius: .35rem .35rem 0 0
+            img
+                width: 100%
+            &:nth-child(1)
+                bottom: -37px
+                left: 0px
+                transform: scale(.8, .8)
+                z-index: 2
+            &:nth-child(2)
+                left: 50%
+                margin-left: -300px
+                z-index: 4
+                bottom: 0
+            &:nth-child(3)
+                bottom: -37px
+                right: 0
+                transform: scale(.8, .8)
+                z-index: 2
+#skills
+    background: #fff
+    padding: 4em 0 0 0
+    h2
+        font-weight: bold
+    #chart
+        background: url(../img/chart_bg.png)
+        background-repeat: no-repeat
+        background-position: bottom left
+        // background-size: cover
+        li
+            display: inline-block
+            vertical-align: bottom
+            position: relative
+            width: 120px
+            margin: 2px 2em
+            height: 500px
+            background: #ccc
+            text-align: center
+            &:nth-child(1)
+                background: #ff7473
+                height: 400px
+            &:nth-child(2)
+                background: #60c5ba
+                height: 400px
+            &:nth-child(3)
+                background: #47b8e0
+                height: 400px
+            &:nth-child(4)
+                background: #ffc952
+                height: 350px
+            &:nth-child(5)
+                background: #34314c
+                height: 250px
+        p
+            color: #fff
+            vertical-align: bottom
+            position: absolute
+            bottom: 0
+            font-size: 3em
+            font-weight: bold
+            width: 100%
+        span
+            position: absolute
+            bottom: 10px
+            width: 100%
+            color: #fff
+            font-size: .9em
+            display: block
+footer
+    background: rgba(#e5e2f0, .25)
+    padding: 4em 0
+    h2
+        font-weight: bold
+    h3
+        line-height: 1.6em
+        color: #707070
+    button
+        margin: 4em 0
+        i
+            margin: 0 .5em 0 0
+.copyright
+    background: #fff
+    p
+        font-weight: bold
